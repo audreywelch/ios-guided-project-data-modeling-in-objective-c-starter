@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD5CDCC924227EB20062E885 /* LSIFirstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5CDCC824227EB20062E885 /* LSIFirstResponder.m */; };
 		BDFC8F8223FDA09F00A39B21 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFC8F8123FDA09F00A39B21 /* AppDelegate.m */; };
 		BDFC8F8523FDA09F00A39B21 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFC8F8423FDA09F00A39B21 /* SceneDelegate.m */; };
 		BDFC8F8823FDA09F00A39B21 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFC8F8723FDA09F00A39B21 /* ViewController.m */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD5CDCC724227EB20062E885 /* LSIFirstResponder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIFirstResponder.h; sourceTree = "<group>"; };
+		BD5CDCC824227EB20062E885 /* LSIFirstResponder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIFirstResponder.m; sourceTree = "<group>"; };
 		BDFC8F7D23FDA09F00A39B21 /* Quakes-Objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quakes-Objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDFC8F8023FDA09F00A39B21 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BDFC8F8123FDA09F00A39B21 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -108,6 +111,8 @@
 				BDFC8F8423FDA09F00A39B21 /* SceneDelegate.m */,
 				BDFC8F8623FDA09F00A39B21 /* ViewController.h */,
 				BDFC8F8723FDA09F00A39B21 /* ViewController.m */,
+				BD5CDCC724227EB20062E885 /* LSIFirstResponder.h */,
+				BD5CDCC824227EB20062E885 /* LSIFirstResponder.m */,
 				BDFC8F8923FDA09F00A39B21 /* Main.storyboard */,
 				BDFC8F8C23FDA0A100A39B21 /* Assets.xcassets */,
 				BDFC8F8E23FDA0A100A39B21 /* LaunchScreen.storyboard */,
@@ -254,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD5CDCC924227EB20062E885 /* LSIFirstResponder.m in Sources */,
 				BDFC8FB323FDA12B00A39B21 /* LSIFileHelper.m in Sources */,
 				BDFC8FB523FDA12B00A39B21 /* LSILog.m in Sources */,
 				BDFC8F8823FDA09F00A39B21 /* ViewController.m in Sources */,

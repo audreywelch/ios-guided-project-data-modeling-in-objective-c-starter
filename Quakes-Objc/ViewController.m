@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "LSIFirstResponder.h"
+#import "LSILog.h"
 
 @interface ViewController ()
 
@@ -16,7 +18,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    LSIFirstResponder *firstResponder = [[LSIFirstResponder alloc] initWithName:@"Steve"];
+
+    NSLog(@"responder: %@", firstResponder);
+    NSLog(@"name: %@", firstResponder.name);  // dot syntax
+    // Command + Alt + [ = move up
+    // Command + Alt + ] = move down
+    
+    firstResponder.name = @"John";  // dot syntax
+    [firstResponder setName:@"John"]; // method calling
+    
+    NSLog(@"name: %@", [firstResponder name]); // method calling (dot syntax turns into this)
 }
 
 
