@@ -45,7 +45,7 @@
     XCTAssertEqualWithAccuracy(-116.7776667, quake.longitude, 0.0001);
 }
 
-- (void)testQuakesParsing {
+- (void)testQuakesParsingWithNullMagnitudeIsNil {
     NSDate *time = [NSDate dateWithTimeIntervalSince1970:1388620296020 / 1000.0];
     
     NSData *quakeData = loadFile(@"Quakes.json", [LSIQuakeTests class]);
@@ -64,8 +64,8 @@
     NSLog(@"Quake Results: %@", quakeResults.quakes);
     
     LSIQuake *quake = quakeResults.quakes[0];
-    
-    XCTAssertEqualWithAccuracy(1.29, quake.magnitude.doubleValue, 0.0001);
+  
+    XCTAssertNil(quake.magnitude);
     XCTAssertEqualObjects(@"10km SSW of Idyllwild, CA", quake.place);
     XCTAssertEqualObjects(time, quake.time);
     

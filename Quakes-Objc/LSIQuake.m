@@ -46,6 +46,11 @@
     
     // Question: How do we want it to behave when values are nil?
     
+    if ([magnitude isKindOfClass:[NSNull class]]) {
+        // null value in the JSON
+        magnitude = nil; // UI display "N/A"
+    }
+    
     // Failable initializer to require all fields but the magnitude
     
     // We're assuming these values are required for valid object creation
