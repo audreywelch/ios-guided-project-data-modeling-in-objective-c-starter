@@ -10,7 +10,7 @@
 
 @implementation LSIQuake
 
-- (instancetype)initWithMagnitude:(double)magnitude
+- (instancetype)initWithMagnitude:(NSNumber *)magnitude
                             place:(NSString *)place
                              time:(NSDate *)time
                          latitude:(double)latitude
@@ -33,7 +33,12 @@
     NSArray *coordinates = geometry[@"coordinates"];
     
     // Temporary variables to check for non-nil
-    NSNumber *magnitude = properties[@"mag"];
+    NSNumber *magnitude = properties[@"mag"];  // Can be null
+
+    if ([magnitude isKindOfClass:[NSNull class]]) {
+        magnitude = nil; // let's treat as an optional
+    }
+    
     NSString *place = properties[@"place"];
     NSNumber *timeNumber = properties[@"time"]; // time in milliseconds
     
@@ -48,12 +53,12 @@
     
     // if all required values are present, call the init method
     
-    // All fields are required to initialize
-    if (magnitude && place && timeNumber && latitude && longitude) {
+    // All fields are required (except magnitude) to initialize
+    if (place && timeNumber && latitude && longitude) {
         // create the object
         NSDate *time = [NSDate dateWithTimeIntervalSince1970:timeNumber.longValue / 1000.0];
         
-        self = [self initWithMagnitude:magnitude.doubleValue
+        self = [self initWithMagnitude:magnitude
                                  place:place
                                   time:time
                               latitude:latitude.doubleValue

@@ -36,7 +36,7 @@
     
     // Double?
     // NSNumber = nil
-    XCTAssertEqualWithAccuracy(1.29, quake.magnitude, 0.0001);
+    XCTAssertEqualWithAccuracy(1.29, quake.magnitude.doubleValue, 0.0001);
     XCTAssertEqualObjects(@"10km SSW of Idyllwild, CA", quake.place);
     XCTAssertEqualObjects(time, quake.time);
     
@@ -46,7 +46,7 @@
 
 }
 
-- (void)testQuakesParsing {
+- (void)testQuakesParsingWithNilMagnitude {
     NSDate *time = [NSDate dateWithTimeIntervalSince1970:1388620296020 / 1000.0];
     
     NSData *quakeData = loadFile(@"Quakes.json", [LSIQuakeTests class]);
@@ -66,17 +66,12 @@
     
     LSIQuake *quake = quakeResults.quakes[0];
     
-    XCTAssertEqualWithAccuracy(1.29, quake.magnitude, 0.0001);
+    XCTAssertNil(quake.magnitude);
     XCTAssertEqualObjects(@"10km SSW of Idyllwild, CA", quake.place);
     XCTAssertEqualObjects(time, quake.time);
     
-    // For now we'll just set the alert to nil, you may want to use @"" instead
-//    XCTAssertNil(quake.alert);
-//    
-//    XCTAssertEqualObjects(@"earthquake", quake.type);
     XCTAssertEqualWithAccuracy(33.663333299999998, quake.latitude, 0.0001);
     XCTAssertEqualWithAccuracy(-116.7776667, quake.longitude, 0.0001);
-    
 }
 
 

@@ -12,13 +12,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LSIQuake : NSObject
 
-@property (nonatomic, readonly) double magnitude;
+@property (nonatomic, readonly) NSNumber *magnitude;
+//@property (nonatomic, readonly) double magnitude; // can't use for optional values
 @property (nonatomic, readonly, copy) NSString *place;
 @property (nonatomic, readonly) NSDate *time;
 @property (nonatomic, readonly) double latitude;
 @property (nonatomic, readonly) double longitude;
 
-- (instancetype)initWithMagnitude:(double)magnitude
+- (instancetype)initWithMagnitude:(NSNumber *)magnitude
                             place:(NSString *)place
                              time:(NSDate *)time
                          latitude:(double)latitude
