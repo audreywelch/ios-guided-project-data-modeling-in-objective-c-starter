@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		BDC053EB24476AB3004B2BB2 /* LSIFirstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC053EA24476AB3004B2BB2 /* LSIFirstResponder.m */; };
 		BDC053EC24476AB3004B2BB2 /* LSIFirstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC053EA24476AB3004B2BB2 /* LSIFirstResponder.m */; };
+		BDC053EF24477645004B2BB2 /* LSIQuake.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC053EE24477645004B2BB2 /* LSIQuake.m */; };
+		BDC053F024477645004B2BB2 /* LSIQuake.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC053EE24477645004B2BB2 /* LSIQuake.m */; };
+		BDC053F224477A8E004B2BB2 /* LSIQuakeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC053F124477A8E004B2BB2 /* LSIQuakeTests.m */; };
 		BDFC8F8223FDA09F00A39B21 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFC8F8123FDA09F00A39B21 /* AppDelegate.m */; };
 		BDFC8F8523FDA09F00A39B21 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFC8F8423FDA09F00A39B21 /* SceneDelegate.m */; };
 		BDFC8F8823FDA09F00A39B21 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFC8F8723FDA09F00A39B21 /* ViewController.m */; };
@@ -42,6 +45,9 @@
 /* Begin PBXFileReference section */
 		BDC053E924476AB3004B2BB2 /* LSIFirstResponder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIFirstResponder.h; sourceTree = "<group>"; };
 		BDC053EA24476AB3004B2BB2 /* LSIFirstResponder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIFirstResponder.m; sourceTree = "<group>"; };
+		BDC053ED24477645004B2BB2 /* LSIQuake.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIQuake.h; sourceTree = "<group>"; };
+		BDC053EE24477645004B2BB2 /* LSIQuake.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIQuake.m; sourceTree = "<group>"; };
+		BDC053F124477A8E004B2BB2 /* LSIQuakeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIQuakeTests.m; sourceTree = "<group>"; };
 		BDFC8F7D23FDA09F00A39B21 /* Quakes-Objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quakes-Objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDFC8F8023FDA09F00A39B21 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BDFC8F8123FDA09F00A39B21 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -113,6 +119,8 @@
 				BDFC8F8623FDA09F00A39B21 /* ViewController.h */,
 				BDFC8F8723FDA09F00A39B21 /* ViewController.m */,
 				BDC053E924476AB3004B2BB2 /* LSIFirstResponder.h */,
+				BDC053ED24477645004B2BB2 /* LSIQuake.h */,
+				BDC053EE24477645004B2BB2 /* LSIQuake.m */,
 				BDC053EA24476AB3004B2BB2 /* LSIFirstResponder.m */,
 				BDFC8F8923FDA09F00A39B21 /* Main.storyboard */,
 				BDFC8F8C23FDA0A100A39B21 /* Assets.xcassets */,
@@ -129,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				BDFC8F9C23FDA0A100A39B21 /* Quakes_ObjcTests.m */,
+				BDC053F124477A8E004B2BB2 /* LSIQuakeTests.m */,
 				BDFC8F9E23FDA0A100A39B21 /* Info.plist */,
 			);
 			path = "Quakes-ObjcTests";
@@ -261,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDC053EB24476AB3004B2BB2 /* LSIFirstResponder.m in Sources */,
+				BDC053EF24477645004B2BB2 /* LSIQuake.m in Sources */,
 				BDFC8FB323FDA12B00A39B21 /* LSIFileHelper.m in Sources */,
 				BDFC8FB523FDA12B00A39B21 /* LSILog.m in Sources */,
 				BDFC8F8823FDA09F00A39B21 /* ViewController.m in Sources */,
@@ -279,6 +289,8 @@
 				BDFC8FB423FDA12B00A39B21 /* LSIFileHelper.m in Sources */,
 				BDFC8FB623FDA12B00A39B21 /* LSILog.m in Sources */,
 				BDFC8F9D23FDA0A100A39B21 /* Quakes_ObjcTests.m in Sources */,
+				BDC053F024477645004B2BB2 /* LSIQuake.m in Sources */,
+				BDC053F224477A8E004B2BB2 /* LSIQuakeTests.m in Sources */,
 				BDFC8FB823FDA12B00A39B21 /* LSIErrors.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
