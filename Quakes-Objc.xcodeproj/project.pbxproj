@@ -12,6 +12,8 @@
 		84EDEF7B246111FB007B4360 /* LSIQuake.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EDEF7A246111FB007B4360 /* LSIQuake.m */; };
 		84EDEF7C246111FB007B4360 /* LSIQuake.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EDEF7A246111FB007B4360 /* LSIQuake.m */; };
 		84EDEF7E246114EB007B4360 /* LSIQuakeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EDEF7D246114EB007B4360 /* LSIQuakeTests.m */; };
+		84EDEF8124611CB0007B4360 /* LSIQuakeResults.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EDEF8024611CB0007B4360 /* LSIQuakeResults.m */; };
+		84EDEF8224611CB0007B4360 /* LSIQuakeResults.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EDEF8024611CB0007B4360 /* LSIQuakeResults.m */; };
 		BDFC8F8223FDA09F00A39B21 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFC8F8123FDA09F00A39B21 /* AppDelegate.m */; };
 		BDFC8F8523FDA09F00A39B21 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFC8F8423FDA09F00A39B21 /* SceneDelegate.m */; };
 		BDFC8F8823FDA09F00A39B21 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFC8F8723FDA09F00A39B21 /* ViewController.m */; };
@@ -48,6 +50,8 @@
 		84EDEF79246111FB007B4360 /* LSIQuake.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIQuake.h; sourceTree = "<group>"; };
 		84EDEF7A246111FB007B4360 /* LSIQuake.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIQuake.m; sourceTree = "<group>"; };
 		84EDEF7D246114EB007B4360 /* LSIQuakeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIQuakeTests.m; sourceTree = "<group>"; };
+		84EDEF7F24611CB0007B4360 /* LSIQuakeResults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIQuakeResults.h; sourceTree = "<group>"; };
+		84EDEF8024611CB0007B4360 /* LSIQuakeResults.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIQuakeResults.m; sourceTree = "<group>"; };
 		BDFC8F7D23FDA09F00A39B21 /* Quakes-Objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quakes-Objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDFC8F8023FDA09F00A39B21 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BDFC8F8123FDA09F00A39B21 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -120,6 +124,8 @@
 				84EDEF76246101B6007B4360 /* LSIFirstResponder.m */,
 				84EDEF79246111FB007B4360 /* LSIQuake.h */,
 				84EDEF7A246111FB007B4360 /* LSIQuake.m */,
+				84EDEF7F24611CB0007B4360 /* LSIQuakeResults.h */,
+				84EDEF8024611CB0007B4360 /* LSIQuakeResults.m */,
 				BDFC8F8623FDA09F00A39B21 /* ViewController.h */,
 				BDFC8F8723FDA09F00A39B21 /* ViewController.m */,
 				BDFC8F8923FDA09F00A39B21 /* Main.storyboard */,
@@ -272,6 +278,7 @@
 				84EDEF77246101B6007B4360 /* LSIFirstResponder.m in Sources */,
 				84EDEF7B246111FB007B4360 /* LSIQuake.m in Sources */,
 				BDFC8FB323FDA12B00A39B21 /* LSIFileHelper.m in Sources */,
+				84EDEF8124611CB0007B4360 /* LSIQuakeResults.m in Sources */,
 				BDFC8FB523FDA12B00A39B21 /* LSILog.m in Sources */,
 				BDFC8F8823FDA09F00A39B21 /* ViewController.m in Sources */,
 				BDFC8FB723FDA12B00A39B21 /* LSIErrors.m in Sources */,
@@ -290,6 +297,7 @@
 				BDFC8FB623FDA12B00A39B21 /* LSILog.m in Sources */,
 				BDFC8F9D23FDA0A100A39B21 /* Quakes_ObjcTests.m in Sources */,
 				84EDEF7C246111FB007B4360 /* LSIQuake.m in Sources */,
+				84EDEF8224611CB0007B4360 /* LSIQuakeResults.m in Sources */,
 				84EDEF7E246114EB007B4360 /* LSIQuakeTests.m in Sources */,
 				BDFC8FB823FDA12B00A39B21 /* LSIErrors.m in Sources */,
 			);
