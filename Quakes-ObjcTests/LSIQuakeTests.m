@@ -38,7 +38,7 @@
     
     // Double?
     // NSNumber = nil
-    XCTAssertEqualWithAccuracy(1.29, quake.magnitude, 0.0001);
+    XCTAssertEqualWithAccuracy(1.29, quake.magnitude.doubleValue, 0.0001);
     XCTAssertEqualObjects(@"10km SSW of Idyllwild, CA", quake.place);
     XCTAssertEqualObjects(time, quake.time);
     
